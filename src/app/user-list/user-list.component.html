@@ -1,16 +1,15 @@
-<p>user-list works!</p>
+<!-- <p>user-list works!</p> -->
 <!-- <div class="text-center bg-warning p-2 text-dark bg-opacity-75 mb-3"><app-user-single></app-user-single></div>
 <div class="text-center bg-warning p-2 text-dark bg-opacity-75 mb-3"><app-user-single></app-user-single></div>
 <div class="text-center bg-warning p-2 text-dark bg-opacity-75 mb-3"><app-user-single></app-user-single></div> -->
 
 <ol>
  <li *ngFor="let person of persons">
-    <div>
-      <img src="{{person.profilePhotoUrl}}" style="height: 80px;" alt="">
-      <span><b>{{person.name}}</b>
-      <b>{{person.surname}}</b>
+    <div class="p-2 d-flex align-items-center">
+      <img src="{{person.profilePhotoUrl}}" style="height: 50px; width: 50px;">
+      <strong>{{person.name}} {{person.surname}}</strong>
       {{person.age}}
-      {{person.address.city}}</span>
+      {{person.address.city}}
     </div>
   </li>
 </ol>
