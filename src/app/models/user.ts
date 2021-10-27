@@ -28,17 +28,17 @@ export interface ICompanies{
 
 
 export interface IObj {
-  id?: number;
+  id: number;
   name: string;
   surname: string;
-  age?: number;
-  dateOfBirth?: string;
-  address?: IAddress;
-  role?: Roles;
-  username?: string;
-  profilePhotoUrl?: string;
-  companies: ICompanies[];
-  gender?: Gender;
+  age: number;
+  dateOfBirth: string;
+  address: IAddress;
+  role: Roles;
+  username: string;
+  profilePhotoUrl: string;
+  companies?: ICompanies[];
+  gender: Gender;
 }
 
 
