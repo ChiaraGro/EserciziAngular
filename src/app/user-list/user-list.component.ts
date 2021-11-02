@@ -60,6 +60,11 @@ persons : IObj[] =
       }
   ];
 
+  onDeleteUser(person: IObj){
+    const index = this.persons.indexOf(person);
+    this.persons.splice(index, 1)
+  }
+
   constructor() { }
 
   ngOnInit(): void {
