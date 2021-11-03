@@ -1,4 +1,4 @@
-import { IObj } from './../models/user';
+import { IObj, Roles } from './../models/user';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
